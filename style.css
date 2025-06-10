@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#E15A97;
+    text-align:center;
+    /* align-items: center; */
+}
+.container{
+    height:70vh; /*70% of the viewport height..i.e 
+    whatever be the height of the page always container's 
+    size will be 70% of it*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.game{
+    height:60vmin; /*vmin:1% of the 
+    viewport's smaller dimension*/
+    width:60vmin;
+    display:flex;/*all the boxes come in same line*/
+    flex-wrap:wrap;/*if no space according to the given width 
+    then add the element to next line*/
+    justify-content:center;
+    align-items:center;
+    gap:1.5vmin;
+}
+.box
+{
+    height:18vmin;/*since the height of the game box ig 60vmin
+    and we want 3 boxes to be there in 1 row so each box must be approx 20 vmin height*/
+    width:18vmin;
+    border-radius:1rem;
+    border:none;
+    box-shadow:0 0 1rem rgba(0,0,0,0.5);
+    font-size:8vmin;
+    color:#4B2840;
+    background-color: antiquewhite;
+}
+.reset
+{
+  padding:1rem;
+  font-size:1.25rem;  
+  border-radius:1rem;
+  border:none;
+  box-shadow:0 0 1rem rgba(0,0,0,1.5);
+  background-color:#861388 ;
+  color:white;
+}
+#newbtn
+{
+margin-top:5px;
+  padding:1rem;
+  font-size:1.25rem;  
+  border-radius:1rem;
+  border:none;
+  box-shadow:0 0 1rem rgba(0,0,0,1.5);
+  background-color:#861388 ;
+  color:white;
+}
+#mssg{
+    color:aliceblue;
+    font-size:9vmin;
+
+}
+.mssgcontainer{
+    height:40vmin;
+}
+.hide{
+    display:none;/*hiding the winner mssg beforehand*/
+}
